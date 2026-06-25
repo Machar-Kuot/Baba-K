@@ -1,16 +1,282 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<html lang="en">
 
-  <body>
-    <div class="main">
-      <div class="navbar">
-        <div class="icon">
-          <h2>PraRoz</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Baba K — Sports & Basketball Photography by Machar Kuot. Every shoot counts." />
+  <meta name="author" content="Machar Kuot" />
+
+  <!-- Open Graph (for social sharing previews) -->
+  <meta property="og:title" content="Baba K | Sports Photography" />
+  <meta property="og:description" content="Every shoot counts." />
+  <meta property="og:type" content="website" />
+
+  <title>Baba K | Sports Photography</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet (we build this next) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav">
+    <div class="nav__logo">
+      <a href="#home">Baba K</a>
+    </div>
+
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Mobile hamburger -->
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <!-- Background image/video goes here -->
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Sports &amp; Basketball Photography</p>
+        <h1 class="hero__title">Baba K</h1>
+        <p class="hero__tagline">Every shoot counts.</p>
+        <a href="#work" class="btn btn--primary">View Work</a>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== WORK / PORTFOLIO ========== -->
+    <section class="work" id="work">
+      <div class="container">
+
+        <div class="section-header">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="work__filters" role="tablist">
+          <button class="work__filter work__filter--active" role="tab" data-filter="all">All</button>
+          <button class="work__filter" role="tab" data-filter="basketball">Basketball</button>
+          <button class="work__filter" role="tab" data-filter="sports">Sports</button>
+          <button class="work__filter" role="tab" data-filter="video">Video</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="work__grid">
+
+          <article class="work__item" data-category="basketball">
+            <div class="work__thumb">
+              <img src="assets/images/photo-1.jpg" alt="Basketball player mid-air dunk" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Above the Rim</p>
+                <p class="work__item-meta">Basketball · 2024</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="work__item" data-category="basketball">
+            <div class="work__thumb">
+              <img src="assets/images/photo-2.jpg" alt="Player driving to the basket" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Drive</p>
+                <p class="work__item-meta">Basketball · 2024</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="work__item" data-category="sports">
+            <div class="work__thumb">
+              <img src="assets/images/photo-3.jpg" alt="Athlete in motion" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Full Speed</p>
+                <p class="work__item-meta">Sports · 2024</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="work__item" data-category="basketball">
+            <div class="work__thumb">
+              <img src="assets/images/photo-4.jpg" alt="Game night crowd and court" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Game Night</p>
+                <p class="work__item-meta">Basketball · 2023</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="work__item" data-category="video">
+            <div class="work__thumb">
+              <img src="assets/images/thumb-video-1.jpg" alt="Video project thumbnail" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">Court Vision</p>
+                <p class="work__item-meta">Videography · 2024</p>
+              </div>
+              <span class="work__play-icon" aria-hidden="true">&#9654;</span>
+            </div>
+          </article>
+
+          <article class="work__item" data-category="sports">
+            <div class="work__thumb">
+              <img src="assets/images/photo-5.jpg" alt="Post-game portrait" loading="lazy" />
+              <div class="work__item-overlay">
+                <p class="work__item-title">The Grind</p>
+                <p class="work__item-meta">Sports · 2023</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- /work__grid -->
+
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+
+        <div class="about__image">
+          <img src="assets/images/machar-portrait.jpg" alt="Machar Kuot — photographer and videographer" />
+        </div>
+
+        <div class="about__text">
+          <p class="section-label">About</p>
+          <h2 class="section-title">Machar Kuot</h2>
+          <p class="about__bio">
+            I'm a sports photographer, videographer, and web developer based in [Your City].
+            My lens lives courtside — capturing the split-second decisions, raw emotion, and
+            relentless energy of the game. Every frame is intentional. Every shoot counts.
+          </p>
+          <p class="about__bio">
+            Whether it's a buzzer-beater or a quiet moment in the tunnel, I find the story
+            that most people miss.
+          </p>
+          <a href="#contact" class="btn btn--outline">Work With Me</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="section-header">
+          <p class="section-label">What I Do</p>
+          <h2 class="section-title">Services</h2>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">&#9632;</span>
+            <h3 class="service-card__title">Sports Photography</h3>
+            <p class="service-card__desc">Live game coverage, action shots, and editorial sports photography for teams, athletes, and media.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">&#9632;</span>
+            <h3 class="service-card__title">Videography</h3>
+            <p class="service-card__desc">Hype reels, highlight packages, documentary-style athlete profiles, and event coverage.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-card__icon" aria-hidden="true">&#9632;</span>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">Custom websites built from scratch — fast, clean, and designed to make your brand stand out.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+
+        <div class="section-header">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="contact__sub">Have a project, game, or idea? I'm ready.</p>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option value="photography">Sports Photography</option>
+              <option value="video">Videography</option>
+              <option value="web">Web Development</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Baba K</p>
+      <p class="footer__copy">&copy; <span id="year"></span> Machar Kuot. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Twitter / X">X</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
       </div>
     </div>
-  </body>
+  </footer>
+
+  <!-- JavaScript (we build this after CSS) -->
+  <script src="script.js"></script>
+
+</body>
 </html>
