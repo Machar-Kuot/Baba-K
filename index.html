@@ -1,91 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"> 
-    <title>
-      Baba K Media.
-    </title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baba K | Photographer · Videographer · Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="logo">BABA K</a>
 
-    <header>
-      <div>
-        <a href="#baba" class="brand">
-          <img scr="Babaklogo.jpg" alt="Baba K logo" class="brand-logo">
-          Baba K<span>Images</span>
-        </a>
-        <nav class="main-nav">
-          <a href="baba">Baba K</a>
-          <a href="about">About Me</a>
-          <a href="vision">Vision</a>
-          <a href="experience">Experience</a>
-          <a href="skills">Personal Skills</a>
-          <a href="sport">Sports Media</a>
-          <a href="fashion">Fashion Media</a>
-          <a href="connect">Connect with us</a>
-          <a href="contact">Contact</a>
-        </nav>
+      <button class="mobile-menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO / HOME ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Machar Kuot</h1>
+      <p class="hero-role">Photographer &middot; Videographer &middot; Web Developer</p>
+      <p class="hero-tagline">Every shoot counts.</p>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span class="scroll-cue-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="section-heading">
+      <span class="section-label">01</span>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image">
+        <!-- photo goes here -->
       </div>
-    </header>
+      <div class="about-text">
+        <p class="about-bio">
+          I'm a South Sudanese photographer, videographer, and web developer, born in South Sudan
+          and raised in Kenya, where I completed both primary and high school. I'm currently a
+          first-year university student. My work centers on basketball &mdash; men's and women's &mdash;
+          capturing the intensity and story of every game through my lens.
+        </p>
+        <ul class="about-facts">
+          <li><span>Name</span> Machar Kuot</li>
+          <li><span>Origin</span> South Sudan, raised in Kenya</li>
+          <li><span>Education</span> University &mdash; 1st Year, 2nd Semester</li>
+          <li><span>Focus</span> Basketball, Men's &amp; Women's</li>
+          <li><span>Instagram</span> @its_baba.k</li>
+        </ul>
+        <a href="#" class="btn btn-outline">Download CV</a>
+      </div>
+    </div>
+  </section>
 
-    <main> 
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services">
+    <div class="section-heading">
+      <span class="section-label">02</span>
+      <h2>Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><!-- icon --></div>
+        <h3>Photography</h3>
+        <p>Placeholder description of photography services.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><!-- icon --></div>
+        <h3>Videography</h3>
+        <p>Placeholder description of videography services.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><!-- icon --></div>
+        <h3>Web Development</h3>
+        <p>Placeholder description of web development services.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><!-- icon --></div>
+        <h3>User Experience</h3>
+        <p>UX/UI design in Figma &mdash; wireframes, prototypes, and interfaces designed around how people actually use them.</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- Hero -->
-      <section>
-        <div class="hero-court-lines" aria-hidden="true"></div>
-        <div>
-          <p class="eyebrow">Nuru Basketball Media team</p>
-          <h1>Baba K<br>MACHAR A KUOT</h1>
-          <p class="hero-tagline">Every shoot taken counts <span class="cameraball">🏀 📸</span></p>
-          <p class="hero-copy">Capturing Moments. Creating Stories, natural, timeless, beautifull you. Photography that speaks from the heart
-</p>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills">
+    <div class="section-heading">
+      <span class="section-label">03</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-list">
+      <div class="skill-bar" data-percent="95">
+        <div class="skill-info"><span>Photography</span><span class="skill-percent">95%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-percent="90">
+        <div class="skill-info"><span>Videography</span><span class="skill-percent">90%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-percent="88">
+        <div class="skill-info"><span>Web Development</span><span class="skill-percent">88%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-percent="92">
+        <div class="skill-info"><span>Photo Editing</span><span class="skill-percent">92%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-percent="86">
+        <div class="skill-info"><span>UX Design (Figma)</span><span class="skill-percent">86%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="portfolio">
+    <div class="section-heading">
+      <span class="section-label">04</span>
+      <h2>Portfolio</h2>
+    </div>
+
+    <div class="portfolio-sub">
+      <h3>Men's Basketball</h3>
+      <div class="portfolio-grid portfolio-grid-men">
+        <!-- 9 existing photos will go here, hero image spanning 2 cols -->
+      </div>
+    </div>
+
+    <div class="portfolio-sub">
+      <h3>Women's Basketball</h3>
+      <div class="portfolio-grid portfolio-grid-women">
+        <!-- 3 existing photos will go here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section id="testimonial" class="testimonial">
+    <div class="section-heading">
+      <span class="section-label">05</span>
+      <h2>Testimonial</h2>
+    </div>
+    <div class="testimonial-slider">
+      <blockquote class="testimonial-quote">
+        <p>Placeholder client quote will go here.</p>
+        <footer>— Client Name, Team/Organization</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== JOURNAL ===== -->
+  <section id="journal" class="journal">
+    <div class="section-heading">
+      <span class="section-label">06</span>
+      <h2>Journal</h2>
+    </div>
+    <div class="journal-grid">
+      <article class="journal-post">
+        <div class="journal-post-image"><!-- image --></div>
+        <p class="journal-post-date">Placeholder Date</p>
+        <h3>Placeholder post title</h3>
+        <a href="#" class="journal-post-link">Read more</a>
+      </article>
+      <article class="journal-post">
+        <div class="journal-post-image"><!-- image --></div>
+        <p class="journal-post-date">Placeholder Date</p>
+        <h3>Placeholder post title</h3>
+        <a href="#" class="journal-post-link">Read more</a>
+      </article>
+      <article class="journal-post">
+        <div class="journal-post-image"><!-- image --></div>
+        <p class="journal-post-date">Placeholder Date</p>
+        <h3>Placeholder post title</h3>
+        <a href="#" class="journal-post-link">Read more</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="section-heading">
+      <span class="section-label">07</span>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
         </div>
-      </section>
-
-      <!--About -->
-      <section id="baba" class="baba">
-        <div class="section-inner">
-          <span class="section-number">01</span>
-          <h2>BABA K</h2>
-          <div class="baba-grid">
-            <p>Photographer and Storyteller</p>
-            <p> We believe every momment holds a story worth telling.
-              Our goal is to capture real emotions, genuine connectiions,
-              and timeless memories that you'll treasure forever.
-            </p>
-            <p>Our journey is fueled by an intense passsion for the media,
-              and our commitment extends beyound the camera.
-              We capture your best moment and impact the sport industry through freezing the best times.
-            </p>
-            <p>We help our African sport to be recognized not only in Africa but to the whole world to know that
-            there's sport being played in Africa. We promote the African basketball.</p>
-          </div>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <span class="contact-info-label">Instagram</span>
+          <a href="https://instagram.com/its_baba.k" target="_blank">@its_baba.k</a>
         </div>
-      </section>
-
-      <!-- About me(Machar Kuot) -->
-      <section id="about" class="about">
-        <div class="section-inner">
-          <span class="section-number light">02</span>
-          <h2>MACHAR A. KUOT</h2>
-          <p>I fall inlove with the game so I decided to capture Them. </p>
-
-          <div class="start-row">
-            <div class="start-card">
-              <span></span>
-              
-            </div>
-          </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Email</span>
+          <a href="#">—</a>
         </div>
-        
-      </section>
-      
+        <div class="contact-info-item">
+          <span class="contact-info-label">Location</span>
+          <span>—</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Baba K. Every shoot counts.</p>
+    <a href="https://instagram.com/its_baba.k" target="_blank" class="footer-instagram">@its_baba.k</a>
+  </footer>
 
-      
-    </main>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
