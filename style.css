@@ -254,9 +254,13 @@ section:not(.hero) {
 }
 
 .about-image {
-  aspect-ratio: 3 / 4;
-  background: var(--charcoal);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about-bio {
@@ -377,6 +381,7 @@ section:not(.hero) {
 }
 
 .portfolio-grid-men { grid-template-columns: repeat(3, 1fr); }
+.portfolio-grid-men .portfolio-hero-img { grid-column: span 2; grid-row: span 2; }
 .portfolio-grid-women { grid-template-columns: repeat(3, 1fr); }
 
 .portfolio-grid img { width: 100%; height: auto; }
